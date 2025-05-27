@@ -8,4 +8,18 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  def new
+    @article = Article.new
+  end
+
+  def create
+    render plain: params[:article]
+  end
+
+  private
+
+  def article_params
+    params.require(:article).permit(:title, :description)
+  end
+
 end
