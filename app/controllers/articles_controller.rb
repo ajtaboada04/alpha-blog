@@ -9,11 +9,12 @@ class ArticlesController < ApplicationController
   end
 
   def new
-    @article = Article.new
   end
 
   def create
-    render plain: params[:article]
+    @article = Article.new(article_params)
+    @article.save
+    redirect_to @article
   end
 
   private
