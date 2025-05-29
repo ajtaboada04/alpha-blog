@@ -44,6 +44,7 @@ GEM
     autoprefixer-rails (10.4.21.0)
       execjs (~> 2)
     base64 (0.2.0)
+    bcrypt (3.1.19)
     bindex (0.8.1)
     bootstrap (4.6.2.1)
       autoprefixer-rails (>= 9.1.0)
@@ -216,6 +217,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootstrap (~> 4.6)
   byebug
   capybara (>= 2.15)
